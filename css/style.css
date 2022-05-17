@@ -1,0 +1,394 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos de Header */
+
+
+
+header{
+    background-color: #947EC3;
+    display: grid;
+    grid-template-areas: "logoSize titleSize"
+                         "menuHome menuHome";
+                         
+   align-items: center;
+   grid-template-columns: 4.5rem 1fr;
+}
+
+
+a{
+    margin-left: 00.25rem;
+    margin-right: 0.25rem;
+    color: black;
+    text-decoration: none;
+    max-width: 4rem;
+}
+
+.menuHome{
+    grid-area: menuHome;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0.5rem;
+    background-color: #6A67CE;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    font-size: 0.7rem;
+}
+
+.titleSize{
+    
+    grid-area: titleSize;
+    text-align: start;
+    color: #6A67CE;
+    text-align: start;
+    font-size: 1rem;
+    text-transform: capitalize;
+    
+}
+
+.logoSize{
+    grid-area: logoSize;
+    height: 4rem;
+    width: 4rem;
+max-width: 4rem;
+}
+
+.logoInicio{
+    height: auto;
+    width: auto;
+    max-height: 4rem;
+    max-width: 4rem;
+}
+
+/* Estilos de main index */
+
+.mainHome{
+    height: 110vh;
+    display: grid;
+    grid-template-areas: "subtextoMain"
+                         "fertiVamp"
+                         "videoLed"
+                         "fertiAzteka";
+
+    
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.subtextoMain{
+    
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    grid-area: subtextoMain;
+    height: 3rem;
+    text-align: center;
+    color: #EEF3D2;
+    background-color: #6A67CE;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fertiVamp{
+    grid-area: fertiVamp;
+
+    width: auto;
+    height: auto;
+    
+}
+
+.vampSize{
+    width: 15rem;
+    height: 15rem;
+}
+
+.videoLed{
+    grid-area: videoLed;
+
+}
+
+.videoSize{
+    height: 8.43rem;
+    width: 15rem;
+}
+
+.fertiAzteka{
+    grid-area: fertiAzteka;
+
+    width: auto;
+    height: auto;
+}
+
+.aztekaSize{
+    width: 15rem;
+    height: 15rem;
+}
+
+/* Estilos de main Nosotros */
+
+.mainNosotros{
+    display: grid;
+    grid-template-areas: "subtituloNosotros subtituloNosotros"
+                         "parrafoNosotros parrafoNosotros"
+                         "logoInstagram logoFacebook"
+                         "subtituloGaleria subtituloGaleria"
+                         "imagenCliente imagenCliente"
+                         "imagenStaff imagenStaff";
+justify-items: center;
+grid-template-columns: 1fr 1fr;
+}
+
+.subtituloNosotros{
+    grid-area: subtituloNosotros;
+    margin: 00.5rem;
+}
+.parrafoNosotros{
+    grid-area: parrafoNosotros;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.logoInstagram{
+    grid-area: logoInstagram;
+}
+
+.logoFacebook{
+    grid-area: logoFacebook;
+}
+.subtituloGaleria{
+    grid-area: subtituloGaleria;
+    font-size: 0.85rem;
+    margin: 00.5rem;
+}
+.imagencliente{
+    grid-area: imagenCliente;
+}
+.imagenStaff{
+    grid-area: imagenStaff;
+}
+.staffSize{
+    width: 17rem;
+    height: 9.56rem;
+}
+.clientesSize{
+    width: 15rem;
+    height: 15.2rem;
+}
+
+.facebookSize{
+    height: 5rem;
+
+}
+
+.instagramSize{
+    width: 5rem;
+}
+
+/* Estilos de main contacto */
+/*
+.mainContacto{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "subContacto"
+                         "formContacto";
+}
+*/
+
+.mainContacto{
+    height: 100vh;
+    align-items: center;
+}
+
+.formContacto{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
+    grid-area: formContacto;
+    
+}
+
+.subtituloContacto{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    padding-right: 11rem;
+    grid-area: subContacto;
+    
+}
+
+/* Estilos de main Puntos de venta */
+
+.mainPuntosdeventa{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "subtituloPtosventa subtituloPtosventa"
+                         "imagenMapa imagenMapa"
+                         "pinIcon ubicacionA"
+                         "pinIcon2 ubicacionB";
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.subtituloPtosventa{
+    grid-area: subtituloPtosventa;
+}
+
+.imagenMapa{
+    grid-area: imagenMapa;
+  
+}
+
+.mapaSize{
+    width: 20rem;
+}
+
+.pinIcon{
+    grid-area: pinIcon;
+
+}
+.ubicacionA{
+    grid-area: ubicacionA;
+}
+.pinIcon2{
+    grid-area: pinIcon2;
+}
+.ubicacionB{
+    grid-area: ubicacionB;
+}
+
+.pinSize{
+    height: 5rem;
+}
+/* Estilos de Footer */
+
+h3{
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0.5rem;
+}
+footer{
+    background-color: #947EC3;
+}
+
+body{background-color: #EEF3D2;}
+
+/* MQ */
+
+/* index */
+@media screen and (min-width:1024px){
+    .mainHome{
+        grid-template-areas: "subtextoMain subtextoMain"
+                             "fertiVamp fertiAzteka"
+                             "videoLed videoLed";
+    }
+    .vampSize{
+        width: 30rem;
+        height: 30rem;
+    }
+    .aztekaSize{
+        width: 30rem;
+        height: 30rem;
+    }
+nav ul{
+    justify-content: center;
+}
+
+/* nosotros */
+.mainNosotros{
+    height: 110vh;
+grid-template-areas: "subtituloNosotros subtituloNosotros"
+"parrafoNosotros parrafoNosotros"
+"logoInstagram logoFacebook"
+"subtituloGaleria subtituloGaleria"
+"imagenCliente imagenStaff";
+
+align-items: center;
+}
+.logoInstagram{
+    justify-self: end;
+}
+.logoFacebook{
+    justify-self: start;
+}
+.staffSize{
+width: 27rem;
+height: auto;
+}
+.clientesSize{
+    height: 17.125rem;
+}
+
+.subtituloNosotros{
+    font-size: 3rem;
+}
+
+nav ul li{
+    font-size: 1.75rem;
+}
+
+.subtituloGaleria{
+    font-size: 1.75rem;
+}
+
+/* Contacto */
+
+.formContacto{
+    font-size: 2rem;
+}
+form fieldset input{
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.subtituloContacto{
+    margin-top: 30rem;
+    font-size: 4rem;
+    padding-right: 23.5rem;
+}
+
+/* Puntos de venta */
+
+.mainPuntosdeventa{
+    grid-template-areas: "subtituloPtosventa subtituloPtosventa subtituloPtosventa subtituloPtosventa"
+    "imagenMapa imagenMapa imagenMapa imagenMapa"
+    "pinIcon ubicacionA pinIcon2 ubicacionB"
+    ;
+    column-gap: 3rem;
+}
+
+.subtituloPtosventa{
+font-size: 3rem;
+}
+
+.mapaSize{
+width: 40rem;
+}
+
+.pinSize{
+height: 10rem;
+}
+
+.ubicacionA{
+font-size: 2rem;
+}
+
+.ubicacionB{
+font-size: 2rem;
+}
+
+}
+
