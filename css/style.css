@@ -303,6 +303,12 @@ body{background-color: #EEF3D2;}
         width: 30rem;
         height: 30rem;
     }
+
+    .videoSize{
+        height: 22.48rem;
+        width: 40rem;
+    }
+
 nav ul{
     justify-content: center;
 }
