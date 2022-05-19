@@ -9,7 +9,7 @@
 
 
 header{
-    background-color: #947EC3;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
     display: grid;
     grid-template-areas: "logoSize titleSize"
                          "menuHome menuHome";
@@ -26,6 +26,7 @@ a{
     text-decoration: none;
     max-width: 4rem;
 }
+
 
 .menuHome{
     grid-area: menuHome;
@@ -44,16 +45,27 @@ nav ul li{
     border-radius: 1rem;
     padding: 0.4rem;
     font-size: 0.7rem;
+    transition: 0.3s;
+}
+
+nav ul li:hover{
+    transform: scale(1.2);
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.07rem;
+
 }
 
 .titleSize{
     
     grid-area: titleSize;
     text-align: start;
-    color: #6A67CE;
+    color: #1AE096;
     text-align: start;
     font-size: 1rem;
     text-transform: capitalize;
+    font-family: 'Roboto Serif', serif;
     
 }
 
@@ -70,6 +82,7 @@ max-width: 4rem;
     max-height: 4rem;
     max-width: 4rem;
 }
+
 
 /* Estilos de main index */
 
@@ -97,7 +110,8 @@ max-width: 4rem;
     text-align: center;
     color: #EEF3D2;
     background-color: #6A67CE;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
 }
 
 .fertiVamp{
@@ -111,6 +125,11 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .vampSize{
     width: 15rem;
     height: 15rem;
+}
+
+.vampSize:hover{
+    transform: scale(1.3);
+    transition: 1.5s;
 }
 
 .videoLed{
@@ -133,6 +152,11 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .aztekaSize{
     width: 15rem;
     height: 15rem;
+}
+
+.aztekaSize:hover{
+    transform: scale(1.3);
+    transition: 1.5s;
 }
 
 /* Estilos de main Nosotros */
@@ -188,14 +212,29 @@ grid-template-columns: 1fr 1fr;
 
 .facebookSize{
     height: 5rem;
+    transition: all .2s ease-in-out;
+}
 
+.facebookSize:hover{
+    transform: scale(1.5);
 }
 
 .instagramSize{
     width: 5rem;
+    transition: all .2s ease-in-out;
 }
 
+.instagramSize:hover{
+    transform: scale(1.5);
+}
+
+
+
+
 /* Estilos de main contacto */
+
+
+
 /*
 .mainContacto{
     height: 100vh;
@@ -281,7 +320,7 @@ h3{
     padding-right: 0.5rem;
 }
 footer{
-    background-color: #947EC3;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
 }
 
 body{background-color: #EEF3D2;}
