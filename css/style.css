@@ -32,6 +32,10 @@ a{
     grid-area: menuHome;
 }
 
+.navbar-color{
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
 nav ul{
     display: flex;
     list-style-type: none;
@@ -85,6 +89,14 @@ max-width: 4rem;
 
 
 /* Estilos de main index */
+
+h2{
+    font-family: 'Roboto Serif', serif;
+}
+
+p{
+    font-family: 'Roboto Serif', serif;
+}
 
 .mainHome{
     height: 110vh;
