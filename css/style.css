@@ -42,6 +42,12 @@ border: #000000;
 }
 
 
+
+header nav div a{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
 /*
 nav ul{
     display: flex;
@@ -189,8 +195,7 @@ p{
                          "parrafoNosotros parrafoNosotros"
                          "logoInstagram logoFacebook"
                          "subtituloGaleria subtituloGaleria"
-                         "imagenCliente imagenCliente"
-                         "imagenStaff imagenStaff";
+                         "carousel-galeria carousel-galeria";
 justify-items: center;
 grid-template-columns: 1fr 1fr;
 }
@@ -217,19 +222,21 @@ grid-template-columns: 1fr 1fr;
     font-size: 0.85rem;
     margin: 00.5rem;
 }
-.imagencliente{
-    grid-area: imagenCliente;
+.carousel-galeria{
+    margin: 3rem;
+    grid-area: carousel-galeria;
 }
-.imagenStaff{
-    grid-area: imagenStaff;
+
+.foto-joaco{
+    height: 18rem;
 }
-.staffSize{
-    width: 17rem;
-    height: 9.56rem;
+
+.staff-size{
+    height: 18rem;
 }
-.clientesSize{
-    width: 15rem;
-    height: 15.2rem;
+
+.staff-2{
+    height: 18rem;
 }
 
 .facebookSize{
@@ -267,7 +274,7 @@ grid-template-columns: 1fr 1fr;
 */
 
 .mainContacto{
-    height: 100vh;
+height: 80vh;
     align-items: center;
 }
 
@@ -381,12 +388,12 @@ nav ul{
 
 /* nosotros */
 .mainNosotros{
-    height: 110vh;
+
 grid-template-areas: "subtituloNosotros subtituloNosotros"
 "parrafoNosotros parrafoNosotros"
 "logoInstagram logoFacebook"
 "subtituloGaleria subtituloGaleria"
-"imagenCliente imagenStaff";
+"carousel-galeria carousel-galeria";
 
 align-items: center;
 }
@@ -396,12 +403,16 @@ align-items: center;
 .logoFacebook{
     justify-self: start;
 }
-.staffSize{
-width: 27rem;
-height: auto;
+.staff-size{
+height: 25rem;
 }
-.clientesSize{
-    height: 17.125rem;
+
+.staff-2{
+    height: 25rem;
+}
+
+.foto-joaco{
+    height: 25rem;
 }
 
 .subtituloNosotros{
