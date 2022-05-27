@@ -36,6 +36,13 @@ a{
     background: linear-gradient(to right, #8e2de2, #4a00e0);
 }
 
+.item-menu:hover{
+border-width: 20px;
+border: #000000;
+}
+
+
+/*
 nav ul{
     display: flex;
     list-style-type: none;
@@ -60,6 +67,8 @@ nav ul li:hover{
     letter-spacing: 0.07rem;
 
 }
+
+*/
 
 .titleSize{
     
@@ -96,6 +105,7 @@ h2{
 
 p{
     font-family: 'Roboto Serif', serif;
+    margin: 2rem;
 }
 
 .mainHome{
@@ -114,16 +124,16 @@ p{
 
 
 .subtextoMain{
-    
+    width: 100%;
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     grid-area: subtextoMain;
-    height: 3rem;
+    height: 2.3rem;
     text-align: center;
-    color: #EEF3D2;
-    background-color: #6A67CE;
+    color: #000000;
+    background-color: #1ae097e5;
     font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
+    align-self: flex-start;
 }
 
 .fertiVamp{
@@ -341,6 +351,11 @@ body{background-color: #EEF3D2;}
 
 /* index */
 @media screen and (min-width:1024px){
+
+.menuHome{
+    justify-content: center;
+}
+
     .mainHome{
         grid-template-areas: "subtextoMain subtextoMain"
                              "fertiVamp fertiAzteka"
