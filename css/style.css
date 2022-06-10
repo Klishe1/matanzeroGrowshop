@@ -408,9 +408,6 @@ body{background-color: #EEF3D2;}
         width: 40rem;
     }
 
-nav ul{
-    justify-content: center;
-}
 
 /* nosotros */
 .mainNosotros{
@@ -445,9 +442,6 @@ height: 25rem;
     font-size: 3rem;
 }
 
-nav ul li{
-    font-size: 1.75rem;
-}
 
 .subtituloGaleria{
     font-size: 1.75rem;

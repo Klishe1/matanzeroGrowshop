@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #EEF3D2;
+  /* Estilos de main productos */
+  /* Estilos de main Nosotros */
+  /* Estilos de main contacto */
+  /* Estilos de main Puntos de venta */ }
+  body header {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    display: grid;
+    grid-template-areas: "logoSize titleSize" "menuHome menuHome";
+    align-items: center;
+    grid-template-columns: 4.5rem 1fr; }
+    body header a {
+      text-decoration: none;
+      color: #000000; }
+    body header .menuHome {
+      grid-area: menuHome; }
+    body header .navbar-color {
+      background: linear-gradient(to right, #8e2de2, #4a00e0); }
+    body header .item-menu:hover {
+      border-width: 20px;
+      border: #000000; }
+    body header header nav div a {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem; }
+    body header .titleSize {
+      grid-area: titleSize;
+      text-align: start;
+      color: #1AE096;
+      text-align: start;
+      font-size: 1rem;
+      text-transform: capitalize;
+      font-family: "Roboto Serif", serif; }
+    body header .logoSize {
+      grid-area: logoSize;
+      height: 4rem;
+      width: 4rem;
+      max-width: 4rem; }
+    body header .logoInicio {
+      height: auto;
+      width: auto;
+      max-height: 4rem;
+      max-width: 4rem; }
+  body .mainHome {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "subtextoMain" "fertiVamp" "videoLed" "fertiAzteka";
+    grid-template-columns: 1fr; }
+    body .mainHome h2 {
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      font-style: italic; }
+    body .mainHome p {
+      font-family: "Roboto Serif", serif;
+      margin: 2rem; }
+    body .mainHome .subtextoMain {
+      width: 100%;
+      font-size: 1rem;
+      grid-area: subtextoMain;
+      height: fit-content;
+      text-align: center;
+      color: #000000;
+      background-color: #1ae097e5;
+      align-self: flex-start; }
+    body .mainHome .fertiVamp {
+      grid-area: fertiVamp;
+      justify-self: center;
+      width: auto;
+      height: auto; }
+    body .mainHome .vampSize {
+      width: 15rem;
+      height: 15rem; }
+    body .mainHome .vampSize:hover {
+      transform: scale(1.3);
+      transition: 1.5s; }
+    body .mainHome .videoLed {
+      grid-area: videoLed;
+      justify-self: center; }
+    body .mainHome .videoSize {
+      height: 8.43rem;
+      width: 15rem; }
+    body .mainHome .fertiAzteka {
+      grid-area: fertiAzteka;
+      width: auto;
+      height: auto;
+      justify-self: center; }
+    body .mainHome .aztekaSize {
+      width: 15rem;
+      height: 15rem; }
+    body .mainHome .aztekaSize:hover {
+      transform: scale(1.3);
+      transition: 1.5s; }
+  body .alfalfa-co {
+    margin-bottom: 2rem;
+    justify-content: center; }
+  body .microkashi-co {
+    margin-bottom: 2rem;
+    justify-content: center; }
+  body .seamagic-azteka {
+    margin-bottom: 2rem;
+    justify-content: center; }
+  body .activador-ls {
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  body .comprar-bg {
+    background-color: #55d35c;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 0.1rem; }
+  body .mainNosotros {
+    display: grid;
+    grid-template-areas: "subtituloNosotros subtituloNosotros" "parrafoNosotros parrafoNosotros" "logoInstagram logoFacebook" "subtituloGaleria subtituloGaleria" "carousel-galeria carousel-galeria";
+    justify-items: center;
+    grid-template-columns: 1fr 1fr; }
+  body .subtituloNosotros {
+    grid-area: subtituloNosotros;
+    margin: 00.5rem; }
+  body .parrafoNosotros {
+    grid-area: parrafoNosotros;
+    text-align: center;
+    margin-bottom: 0.5rem; }
+  body .logoInstagram {
+    grid-area: logoInstagram; }
+  body .logoFacebook {
+    grid-area: logoFacebook; }
+  body .subtituloGaleria {
+    grid-area: subtituloGaleria;
+    font-size: 0.85rem;
+    margin: 00.5rem; }
+  body .carousel-galeria {
+    margin: 3rem;
+    grid-area: carousel-galeria; }
+  body .foto-joaco {
+    height: 18rem; }
+  body .staff-size {
+    height: 18rem; }
+  body .staff-2 {
+    height: 18rem; }
+  body .facebookSize {
+    height: 5rem;
+    transition: all .2s ease-in-out; }
+  body .facebookSize:hover {
+    transform: scale(1.5); }
+  body .instagramSize {
+    width: 5rem;
+    transition: all .2s ease-in-out; }
+  body .instagramSize:hover {
+    transform: scale(1.5); }
+  body .mainContacto {
+    height: 80vh;
+    align-items: center; }
+  body .formContacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
+    grid-area: formContacto; }
+  body .subtituloContacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    padding-right: 11rem;
+    grid-area: subContacto; }
+  body .mainPuntosdeventa {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "subtituloPtosventa subtituloPtosventa" "imagenMapa imagenMapa" "pinIcon ubicacionA" "pinIcon2 ubicacionB";
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+  body .subtituloPtosventa {
+    grid-area: subtituloPtosventa; }
+  body .imagenMapa {
+    grid-area: imagenMapa; }
+  body .mapaSize {
+    width: 20rem; }
+  body .pinIcon {
+    grid-area: pinIcon; }
+  body .ubicacionA {
+    grid-area: ubicacionA; }
+  body .pinIcon2 {
+    grid-area: pinIcon2; }
+  body .ubicacionB {
+    grid-area: ubicacionB; }
+  body .pinSize {
+    height: 5rem; }
+  body footer {
+    background: linear-gradient(to right, #8e2de2, #4a00e0); }
+    body footer h3 {
+      font-size: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 0.5rem; }
+  @media screen and (min-width: 1024px) {
+    body .mainHome {
+      grid-template-areas: "subtextoMain subtextoMain" "fertiVamp fertiAzteka" "videoLed videoLed";
+      grid-template-columns: 1fr 1fr; }
+    body .vampSize {
+      width: 30rem;
+      height: 30rem; }
+    body .aztekaSize {
+      width: 30rem;
+      height: 30rem; }
+    body .videoSize {
+      height: 22.48rem;
+      width: 40rem; }
+    body .mainNosotros {
+      grid-template-areas: "subtituloNosotros subtituloNosotros" "parrafoNosotros parrafoNosotros" "logoInstagram logoFacebook" "subtituloGaleria subtituloGaleria" "carousel-galeria carousel-galeria";
+      align-items: center; }
+    body .logoInstagram {
+      justify-self: end; }
+    body .logoFacebook {
+      justify-self: start; }
+    body .staff-size {
+      height: 25rem; }
+    body .staff-2 {
+      height: 25rem; }
+    body .foto-joaco {
+      height: 25rem; }
+    body .subtituloNosotros {
+      font-size: 3rem; }
+    body .subtituloGaleria {
+      font-size: 1.75rem; }
+    body .formContacto {
+      font-size: 2rem; }
+    body form fieldset input {
+      font-size: 2rem;
+      margin: 2rem; }
+    body .subtituloContacto {
+      margin-top: 30rem;
+      font-size: 4rem;
+      padding-right: 23.5rem; }
+    body .mainPuntosdeventa {
+      grid-template-areas: "subtituloPtosventa subtituloPtosventa subtituloPtosventa subtituloPtosventa" "imagenMapa imagenMapa imagenMapa imagenMapa" "pinIcon ubicacionA pinIcon2 ubicacionB";
+      column-gap: 3rem; }
+    body .subtituloPtosventa {
+      font-size: 3rem; }
+    body .mapaSize {
+      width: 40rem; }
+    body .pinSize {
+      height: 10rem; }
+    body .ubicacionA {
+      font-size: 2rem; }
+    body .ubicacionB {
+      font-size: 2rem; } }
