@@ -1,463 +1,596 @@
 @import "base/variables";
 @import "base/mixins";
+@import "base/extend";
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #EEF3D2;
 
-header{
-    background: $gradiente;
-    display: grid;
-    grid-template-areas: "logoSize titleSize"
-                         "menuHome menuHome";
-                         
-   align-items: center;
-   grid-template-columns: 4.5rem 1fr;
+    header {
+        background: $gradiente;
+        display: grid;
+        grid-template-areas: "logoSize titleSize"
+            "menuHome menuHome";
 
-   a{
-    text-decoration: none;
-    color: #000000;
-}
+        align-items: center;
+        grid-template-columns: 4.5rem 1fr;
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
 
 
-.menuHome{
-    grid-area: menuHome;
-}
+        .menuHome {
+            grid-area: menuHome;
+        }
 
-.navbar-color{
-    background: $gradiente;
-}
-
-.item-menu:hover{
-border-width: 20px;
-border: #000000;
-}
+        .navbar-color {
+            background: $gradiente;
+        }
 
 
 
-header nav div a{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.titleSize{
-    
-    grid-area: titleSize;
-    text-align: start;
-    color: #1AE096;
-    text-align: start;
-    font-size: 1rem;
-    text-transform: capitalize;
-    font-family: $tipografia;
-    
-}
-
-.logoSize{
-    grid-area: logoSize;
-    height: 4rem;
-    width: 4rem;
-max-width: 4rem;
-}
-
-.logoInicio{
-    height: auto;
-    width: auto;
-    max-height: 4rem;
-    max-width: 4rem;
-}
-
-}
-
-// main home
-
-.mainHome{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-justify-content: center;
-    align-items: center;
-    grid-template-areas: "subtextoMain"
-                         "fertiVamp"
-                         "videoLed"
-                         "fertiAzteka";
-
-    grid-template-columns: 1fr;
+        .item-menu:hover {
+            border-width: 20px;
+            border: #000000;
+        }
 
 
-    h2{
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        font-style: italic;
+
+        header nav div a {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+
+        .titleSize {
+
+            grid-area: titleSize;
+            text-align: start;
+            color: #1AE096;
+            text-align: start;
+            font-size: 1rem;
+            text-transform: capitalize;
+            font-family: $tipografia;
+
+        }
+
+        .logoSize {
+            grid-area: logoSize;
+            height: 4rem;
+            width: 4rem;
+            max-width: 4rem;
+        }
+
+        .logoInicio {
+            height: auto;
+            width: auto;
+            max-height: 4rem;
+            max-width: 4rem;
+        }
+
     }
-    
-    p{
-        font-family: $tipografia;
-        margin: 2rem;
-    }
-    
-    
-    
-    
-    .subtextoMain{
+
+    // main home
+
+    .mainHome {
         width: 100%;
-        font-size: 1rem;
-        grid-area: subtextoMain;
-        height: fit-content;
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: "subtextoMain"
+            "fertiVamp"
+            "videoLed"
+            "fertiAzteka";
+
+        grid-template-columns: 1fr;
+
+
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            font-style: italic;
+            a{
+                text-decoration: none;
+                color: #7019E1;
+            }
+            a:hover{
+                color: #8E2DE2;
+            }
+
+        }
+
+        p {
+            font-family: $tipografia;
+            margin: 2rem;
+        }
+
+
+
+
+        .subtextoMain {
+            width: 100%;
+            font-size: 1rem;
+            grid-area: subtextoMain;
+            height: fit-content;
+            text-align: center;
+            color: #000000;
+            background-color: #1ae097e5;
+            align-self: flex-start;
+        }
+
+        .fertiVamp {
+            grid-area: fertiVamp;
+            justify-self: center;
+            width: auto;
+            height: auto;
+
+        }
+
+        .vampSize {
+            width: 15rem;
+            height: 15rem;
+        }
+
+        .vampSize:hover {
+            transform: scale(1.3);
+            transition: 1.5s;
+        }
+
+        .videoLed {
+            grid-area: videoLed;
+            justify-self: center;
+        }
+
+        .videoSize {
+            height: 8.43rem;
+            width: 15rem;
+        }
+
+        .fertiAzteka {
+            grid-area: fertiAzteka;
+            width: auto;
+            height: auto;
+            justify-self: center;
+        }
+
+        .aztekaSize {
+            width: 15rem;
+            height: 15rem;
+        }
+
+        .aztekaSize:hover {
+            transform: scale(1.3);
+            transition: 1.5s;
+        }
+    }
+
+    /* Estilos de main productos */
+
+    .alfalfa-co {
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .microkashi-co {
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .seamagic-azteka {
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .activador-ls {
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .comprar-bg {
+        @extend %buttons;
+    }
+
+    .comprar-bg:hover{
+        background-color: #8E2DE2;
+    }
+
+    .logo-productos {
+        width: auto;
+    }
+
+    .titulo-productos {
+        width: auto;
+
+    }
+
+    .tituloProductos {
+        grid-area: titleSize;
+        text-align: start;
+        color: #1AE096;
+        text-align: start;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        font-family: $tipografia;
+    }
+
+    /* Estilos de main Nosotros */
+
+    .mainNosotros {
+        display: grid;
+        height: 90vh;
+        grid-template-areas: "subtituloNosotros subtituloNosotros"
+            "parrafoNosotros parrafoNosotros"
+            "logoInstagram logoFacebook"
+            "subtituloGaleria subtituloGaleria"
+            "carousel-galeria carousel-galeria";
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+
+        h2{
+            font-size: 3rem;
+        }
+
+        h3{
+         font-size: 2.5rem;
+        }
+    }
+
+    .subtituloNosotros {
+        grid-area: subtituloNosotros;
+        margin: 00.5rem;
+        font-family: $tipografia2;
+
+    }
+
+    .parrafoNosotros {
+        grid-area: parrafoNosotros;
         text-align: center;
-        color: #000000;
-        background-color: #1ae097e5;
-        align-self: flex-start;
+        margin-bottom: 0.5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
-    
-    .fertiVamp{
-        grid-area: fertiVamp;
-    justify-self: center;
-        width: auto;
-        height: auto;
-        
+
+    .logoInstagram {
+        grid-area: logoInstagram;
     }
-    
-    .vampSize{
-        width: 15rem;
-        height: 15rem;
+
+    .logoFacebook {
+        grid-area: logoFacebook;
     }
-    
-    .vampSize:hover{
-        transform: scale(1.3);
-        transition: 1.5s;
+
+    .subtituloGaleria {
+        grid-area: subtituloGaleria;
+        font-size: 0.85rem;
+        margin: 00.5rem;
+        font-family: $tipografia2;
     }
-    
-    .videoLed{
-        grid-area: videoLed;
-    justify-self: center;
+
+    .carousel-galeria {
+        margin: 0rem 3rem 3rem 3rem;
+        grid-area: carousel-galeria;
     }
-    
-    .videoSize{
-        height: 8.43rem;
-        width: 15rem;
+
+    .foto-joaco {
+        @include imagenes-carousel;
     }
-    
-    .fertiAzteka{
-        grid-area: fertiAzteka;
-        width: auto;
-        height: auto;
-        justify-self: center;
+
+    .staff-size {
+        @include imagenes-carousel;
     }
-    
-    .aztekaSize{
-        width: 15rem;
-        height: 15rem;
+
+    .staff-2 {
+        @include imagenes-carousel;
     }
-    
-    .aztekaSize:hover{
-        transform: scale(1.3);
-        transition: 1.5s;
+
+    .facebookSize {
+        height: 5rem;
+        transition: all .2s ease-in-out;
     }
-}
 
-/* Estilos de main productos */
+    .facebookSize:hover {
+        transform: scale(1.5);
+    }
 
-.alfalfa-co{
-    margin-bottom: 2rem;
-    justify-content: center;
-}
+    .instagramSize {
+        width: 5rem;
+        transition: all .2s ease-in-out;
+    }
 
-.microkashi-co{
-    margin-bottom: 2rem;
-    justify-content: center;
-}
+    .instagramSize:hover {
+        transform: scale(1.5);
+    }
 
-.seamagic-azteka{
-    margin-bottom: 2rem;
-    justify-content: center;
-}
+    /* Estilos de main contacto */
 
-.activador-ls{
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.comprar-bg{
-    background-color: #55d35c;
-    border-radius: 0.5rem;
-    border-style: solid;
-    border-width: 0.1rem;
-}
-
-/* Estilos de main Nosotros */
-
-.mainNosotros{
-    display: grid;
-    grid-template-areas: "subtituloNosotros subtituloNosotros"
-                         "parrafoNosotros parrafoNosotros"
-                         "logoInstagram logoFacebook"
-                         "subtituloGaleria subtituloGaleria"
-                         "carousel-galeria carousel-galeria";
-justify-items: center;
-grid-template-columns: 1fr 1fr;
-}
-
-.subtituloNosotros{
-    grid-area: subtituloNosotros;
-    margin: 00.5rem;
-}
-.parrafoNosotros{
-    grid-area: parrafoNosotros;
-    text-align: center;
-    margin-bottom: 0.5rem;
-}
-
-.logoInstagram{
-    grid-area: logoInstagram;
-}
-
-.logoFacebook{
-    grid-area: logoFacebook;
-}
-.subtituloGaleria{
-    grid-area: subtituloGaleria;
-    font-size: 0.85rem;
-    margin: 00.5rem;
-}
-.carousel-galeria{
-    margin: 3rem;
-    grid-area: carousel-galeria;
-}
-
-.foto-joaco{
-@include imagenes-carousel;
-}
-
-.staff-size{
-    @include imagenes-carousel;
-}
-
-.staff-2{
-    @include imagenes-carousel;
-}
-
-.facebookSize{
-    height: 5rem;
-    transition: all .2s ease-in-out;
-}
-
-.facebookSize:hover{
-    transform: scale(1.5);
-}
-
-.instagramSize{
-    width: 5rem;
-    transition: all .2s ease-in-out;
-}
-
-.instagramSize:hover{
-    transform: scale(1.5);
-}
-
-/* Estilos de main contacto */
-
-.mainContacto{
-    height: 80vh;
+    .mainContacto {
+        height: 80vh;
         align-items: center;
     }
-    
-    .formContacto{
+
+    .formContacto {
         display: flex;
         justify-content: center;
         margin-top: 0.25rem;
         margin-bottom: 2rem;
         grid-area: formContacto;
-        
+
     }
-    
-    .subtituloContacto{
+
+    .mensajeTexto{
+        margin: 1rem 0rem 2rem 0rem;
+    }
+
+    .correoTexto{
+        margin-bottom: 2rem;
+    }
+
+    .localidadTexto{
+        margin-bottom: 1rem;
+    }
+
+    .textareaMensaje{
+        margin-top: 0.3rem;
+        width: 20rem;
+    }
+
+    .botonEnviar{
+        @extend %buttons;
+    }
+
+    .botonBorrar{
+        @extend %buttons;
+    }
+
+    .subtituloContacto {
         display: flex;
         justify-content: center;
-        margin-top: 10rem;
+        margin-top: 9rem;
         padding-right: 11rem;
         grid-area: subContacto;
-        
+        font-family: $tipografia2;
+
     }
 
     /* Estilos de main Puntos de venta */
 
-.mainPuntosdeventa{
-    height: 100vh;
-    display: grid;
-    grid-template-areas: "subtituloPtosventa subtituloPtosventa"
-                         "imagenMapa imagenMapa"
-                         "pinIcon ubicacionA"
-                         "pinIcon2 ubicacionB";
-justify-content: center;
-text-align: center;
-align-items: center;
-}
+    .mainPuntosdeventa {
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "subtituloPtosventa subtituloPtosventa"
+            "imagenMapa imagenMapa"
+            "pinIcon ubicacionA"
+            "pinIcon2 ubicacionB";
+        justify-content: center;
+        text-align: center;
+        align-items: center;
 
-.subtituloPtosventa{
-    grid-area: subtituloPtosventa;
-}
+        h2{
+            font-size: 3rem;
+        }
+    }
 
-.imagenMapa{
-    grid-area: imagenMapa;
-  
-}
+    .subtituloPtosventa {
+        grid-area: subtituloPtosventa;
+        font-family: $tipografia2;
 
-.mapaSize{
-    width: 20rem;
-}
+    }
 
-.pinIcon{
-    grid-area: pinIcon;
+    .imagenMapa {
+        grid-area: imagenMapa;
 
-}
-.ubicacionA{
-    grid-area: ubicacionA;
-}
-.pinIcon2{
-    grid-area: pinIcon2;
-}
-.ubicacionB{
-    grid-area: ubicacionB;
-}
+    }
 
-.pinSize{
-    height: 5rem;
-}
+    .mapaSize {
+        width: 20rem;
+    }
 
-footer{
+    .pinIcon {
+        grid-area: pinIcon;
+
+    }
+
+    .ubicacionA {
+        grid-area: ubicacionA;
+    }
+
+    .pinIcon2 {
+        grid-area: pinIcon2;
+    }
+
+    .ubicacionB {
+        grid-area: ubicacionB;
+    }
+
+    .pinSize {
+        height: 5rem;
+    }
+
+    footer {
         background: $gradiente;
-        h3{
+
+        h3 {
             font-size: 1rem;
             display: flex;
             justify-content: flex-end;
             padding-right: 0.5rem;
+            color: #EEF3D2;
+
+            a{
+                text-decoration: none;
+                color: #1AE096;
+            }
         }
-}
+    }
 
-// Media Queries
+    // Media Queries
 
-@media screen and (min-width:1024px){
+    @media screen and (min-width:1024px) {
 
-    //Index
+        //Index
 
-        .mainHome{
+        .mainHome {
             grid-template-areas: "subtextoMain subtextoMain"
-                                 "fertiVamp fertiAzteka"
-                                 "videoLed videoLed";
+                "fertiVamp fertiAzteka"
+                "videoLed videoLed";
 
-                                 grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
         }
 
 
 
-        .vampSize{
+        .vampSize {
             width: 30rem;
             height: 30rem;
         }
-        .aztekaSize{
+
+        .aztekaSize {
             width: 30rem;
             height: 30rem;
         }
-    
-        .videoSize{
+
+        .videoSize {
             height: 22.48rem;
             width: 40rem;
         }
-    
-    
 
-    .mainNosotros{
-    
-    grid-template-areas: "subtituloNosotros subtituloNosotros"
-    "parrafoNosotros parrafoNosotros"
-    "logoInstagram logoFacebook"
-    "subtituloGaleria subtituloGaleria"
-    "carousel-galeria carousel-galeria";
-    
-    align-items: center;
-    }
-    .logoInstagram{
-        justify-self: end;
-    }
-    .logoFacebook{
-        justify-self: start;
-    }
-    .staff-size{
-    height: 25rem;
-    }
-    
-    .staff-2{
-        height: 25rem;
-    }
-    
-    .foto-joaco{
-        height: 25rem;
-    }
-    
-    .subtituloNosotros{
-        font-size: 3rem;
-    }
-    
-    
-    .subtituloGaleria{
-        font-size: 1.75rem;
-    }
-    
-  //Contacto
-    
-    .formContacto{
-        font-size: 2rem;
-    }
-    form fieldset input{
-        font-size: 2rem;
-        margin: 2rem;
-    }
-    
-    .subtituloContacto{
-        margin-top: 30rem;
-        font-size: 4rem;
-        padding-right: 23.5rem;
-    }
-    
-    // Puntos de venta 
-    
-    .mainPuntosdeventa{
-        grid-template-areas: "subtituloPtosventa subtituloPtosventa subtituloPtosventa subtituloPtosventa"
-        "imagenMapa imagenMapa imagenMapa imagenMapa"
-        "pinIcon ubicacionA pinIcon2 ubicacionB"
-        ;
-        column-gap: 3rem;
-    }
-    
-    .subtituloPtosventa{
-    font-size: 3rem;
-    }
-    
-    .mapaSize{
-    width: 40rem;
-    }
-    
-    .pinSize{
-    height: 10rem;
-    }
-    
-    .ubicacionA{
-    font-size: 2rem;
-    }
-    
-    .ubicacionB{
-    font-size: 2rem;
-    }
-    
+     //nosotros
+
+        .mainNosotros {
+
+            grid-template-areas: "subtituloNosotros subtituloNosotros"
+                "parrafoNosotros parrafoNosotros"
+                "logoInstagram logoFacebook"
+                "subtituloGaleria subtituloGaleria"
+                "carousel-galeria carousel-galeria";
+
+            align-items: center;
+        }
+
+        .parrafoNosotros{
+            margin-left: 15rem;
+            margin-right: 15rem;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .logoInstagram {
+            justify-self: end;
+        }
+
+        .logoFacebook {
+            justify-self: start;
+        }
+
+        .staff-size {
+            height: 25rem;
+        }
+
+        .staff-2 {
+            height: 25rem;
+        }
+
+        .foto-joaco {
+            height: 25rem;
+        }
+
+        .subtituloNosotros {
+            font-size: 3rem;
+        }
+
+
+        .subtituloGaleria {
+            font-size: 1.75rem;
+            margin-top: 2rem;
+        }
+
+        //Contacto
+
+        .formContacto {
+            font-size: 2rem;
+        }
+
+        form fieldset input {
+            font-size: 2rem;
+            margin: 2rem;
+        }
+
+        .subtituloContacto {
+            margin-top: 20rem;
+            font-size: 4rem;
+            padding-right: 23.5rem;
+        }
+
+        .textareaMensaje{
+            width: 43rem;
+        }
+
+
+        // Puntos de venta 
+
+        .mainPuntosdeventa {
+            grid-template-areas: "subtituloPtosventa subtituloPtosventa subtituloPtosventa subtituloPtosventa"
+                "imagenMapa imagenMapa imagenMapa imagenMapa"
+                "pinIcon ubicacionA pinIcon2 ubicacionB"
+            ;
+            column-gap: 3rem;
+        }
+
+        .subtituloPtosventa {
+            font-size: 3rem;
+        }
+
+        .mapaSize {
+            width: 40rem;
+        }
+
+        .pinSize {
+            height: 10rem;
+        }
+
+        .ubicacionA {
+            font-size: 2rem;
+        }
+
+        .ubicacionB {
+            font-size: 2rem;
+        }
+
+        //Productos
+
+        .main-productos {
+            display: grid;
+
+            grid-template-areas: "activador-ls microkashi-co"
+                "alfalfa-co seamagic-azteka";
+        }
+
+        .activador-ls {
+            grid-area: activador-ls;
+        }
+
+        .microkashi-co {
+            grid-area: microkashi-co;
+            margin-top: 2rem;
+        }
+
+        .alfalfa-co {
+            grid-area: alfalfa-co;
+        }
+
+        .seamagic-azteka {
+            grid-area: seamagic-azteka;
+        }
+
     }
 
 
 
 }
-

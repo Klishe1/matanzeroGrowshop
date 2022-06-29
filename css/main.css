@@ -1,3 +1,13 @@
+body .comprar-bg, body .botonEnviar, body .botonBorrar {
+  background-color: #55d35c;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  color: #000000;
+  padding: 0.5rem; }
+
 * {
   padding: 0;
   margin: 0;
@@ -58,6 +68,11 @@ body {
       font-family: 'Oswald', sans-serif;
       text-transform: uppercase;
       font-style: italic; }
+      body .mainHome h2 a {
+        text-decoration: none;
+        color: #7019E1; }
+      body .mainHome h2 a:hover {
+        color: #8E2DE2; }
     body .mainHome p {
       font-family: "Roboto Serif", serif;
       margin: 2rem; }
@@ -111,23 +126,40 @@ body {
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem; }
-  body .comprar-bg {
-    background-color: #55d35c;
-    border-radius: 0.5rem;
-    border-style: solid;
-    border-width: 0.1rem; }
+  body .comprar-bg:hover {
+    background-color: #8E2DE2; }
+  body .logo-productos {
+    width: auto; }
+  body .titulo-productos {
+    width: auto; }
+  body .tituloProductos {
+    grid-area: titleSize;
+    text-align: start;
+    color: #1AE096;
+    text-align: start;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-family: "Roboto Serif", serif; }
   body .mainNosotros {
     display: grid;
+    height: 90vh;
     grid-template-areas: "subtituloNosotros subtituloNosotros" "parrafoNosotros parrafoNosotros" "logoInstagram logoFacebook" "subtituloGaleria subtituloGaleria" "carousel-galeria carousel-galeria";
     justify-items: center;
     grid-template-columns: 1fr 1fr; }
+    body .mainNosotros h2 {
+      font-size: 3rem; }
+    body .mainNosotros h3 {
+      font-size: 2.5rem; }
   body .subtituloNosotros {
     grid-area: subtituloNosotros;
-    margin: 00.5rem; }
+    margin: 00.5rem;
+    font-family: "Oswald", sans-serif; }
   body .parrafoNosotros {
     grid-area: parrafoNosotros;
     text-align: center;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
   body .logoInstagram {
     grid-area: logoInstagram; }
   body .logoFacebook {
@@ -135,9 +167,10 @@ body {
   body .subtituloGaleria {
     grid-area: subtituloGaleria;
     font-size: 0.85rem;
-    margin: 00.5rem; }
+    margin: 00.5rem;
+    font-family: "Oswald", sans-serif; }
   body .carousel-galeria {
-    margin: 3rem;
+    margin: 0rem 3rem 3rem 3rem;
     grid-area: carousel-galeria; }
   body .foto-joaco {
     height: 18rem; }
@@ -164,12 +197,22 @@ body {
     margin-top: 0.25rem;
     margin-bottom: 2rem;
     grid-area: formContacto; }
+  body .mensajeTexto {
+    margin: 1rem 0rem 2rem 0rem; }
+  body .correoTexto {
+    margin-bottom: 2rem; }
+  body .localidadTexto {
+    margin-bottom: 1rem; }
+  body .textareaMensaje {
+    margin-top: 0.3rem;
+    width: 20rem; }
   body .subtituloContacto {
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: 9rem;
     padding-right: 11rem;
-    grid-area: subContacto; }
+    grid-area: subContacto;
+    font-family: "Oswald", sans-serif; }
   body .mainPuntosdeventa {
     height: 100vh;
     display: grid;
@@ -177,8 +220,11 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center; }
+    body .mainPuntosdeventa h2 {
+      font-size: 3rem; }
   body .subtituloPtosventa {
-    grid-area: subtituloPtosventa; }
+    grid-area: subtituloPtosventa;
+    font-family: "Oswald", sans-serif; }
   body .imagenMapa {
     grid-area: imagenMapa; }
   body .mapaSize {
@@ -199,7 +245,11 @@ body {
       font-size: 1rem;
       display: flex;
       justify-content: flex-end;
-      padding-right: 0.5rem; }
+      padding-right: 0.5rem;
+      color: #EEF3D2; }
+      body footer h3 a {
+        text-decoration: none;
+        color: #1AE096; }
   @media screen and (min-width: 1024px) {
     body .mainHome {
       grid-template-areas: "subtextoMain subtextoMain" "fertiVamp fertiAzteka" "videoLed videoLed";
@@ -216,6 +266,11 @@ body {
     body .mainNosotros {
       grid-template-areas: "subtituloNosotros subtituloNosotros" "parrafoNosotros parrafoNosotros" "logoInstagram logoFacebook" "subtituloGaleria subtituloGaleria" "carousel-galeria carousel-galeria";
       align-items: center; }
+    body .parrafoNosotros {
+      margin-left: 15rem;
+      margin-right: 15rem;
+      font-size: 1.5rem;
+      margin-bottom: 3rem; }
     body .logoInstagram {
       justify-self: end; }
     body .logoFacebook {
@@ -229,16 +284,19 @@ body {
     body .subtituloNosotros {
       font-size: 3rem; }
     body .subtituloGaleria {
-      font-size: 1.75rem; }
+      font-size: 1.75rem;
+      margin-top: 2rem; }
     body .formContacto {
       font-size: 2rem; }
     body form fieldset input {
       font-size: 2rem;
       margin: 2rem; }
     body .subtituloContacto {
-      margin-top: 30rem;
+      margin-top: 20rem;
       font-size: 4rem;
       padding-right: 23.5rem; }
+    body .textareaMensaje {
+      width: 43rem; }
     body .mainPuntosdeventa {
       grid-template-areas: "subtituloPtosventa subtituloPtosventa subtituloPtosventa subtituloPtosventa" "imagenMapa imagenMapa imagenMapa imagenMapa" "pinIcon ubicacionA pinIcon2 ubicacionB";
       column-gap: 3rem; }
@@ -251,4 +309,16 @@ body {
     body .ubicacionA {
       font-size: 2rem; }
     body .ubicacionB {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+    body .main-productos {
+      display: grid;
+      grid-template-areas: "activador-ls microkashi-co" "alfalfa-co seamagic-azteka"; }
+    body .activador-ls {
+      grid-area: activador-ls; }
+    body .microkashi-co {
+      grid-area: microkashi-co;
+      margin-top: 2rem; }
+    body .alfalfa-co {
+      grid-area: alfalfa-co; }
+    body .seamagic-azteka {
+      grid-area: seamagic-azteka; } }

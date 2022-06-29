@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,9 @@
     <title>Contacto</title>
 
     <!-- Link de funte -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Serif:opsz,wght@8..144,300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -51,19 +53,20 @@
     <form class="formContacto">
         <fieldset>
             
-            <br>
+
             <div class="mensajeTexto">
-                <label for="Mensaje">Déjenos su mensaje</label>
-                <input type="text" name="Mensaje">
+                <label for="Mensaje">Déjenos su mensaje:</label>
+                <br>
+                <input type="text" name="Mensaje" class="textareaMensaje" placeholder="Escriba su mensaje">
             </div>
-            <br>
+
             <div class="correoTexto">
                 <label for="mail">
                     Introduzca su correo
                 </label>
-                <input type="email" name="mail" placeholder="xxxxxxxx@gmail.com">
+                <input type="email" name="mail" placeholder="usuario@gmail.com">
             </div>
-            <br>
+
             <div class="localidadTexto">
                 <label for="localidad">Seleccione su localidad</label>
                 <select name="localidad" id="">
@@ -72,10 +75,10 @@
                     <option value="Otra">Otra</option>
                 </select>
             </div>
-<br>
-            <div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
+
+            <div class="botonesForm">
+                <input type="submit" class="botonEnviar" value="Enviar">
+                <input type="reset" class="botonBorrar" value="Borrar">
             </div>
         </fieldset>
     </form>
